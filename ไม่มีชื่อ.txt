@@ -3779,7 +3779,7 @@ spawn(function()
 	end
 end)
 
-Set:Toggle("ลบข้อความดาเมจ", true, function(value)
+Set:Toggle("ลบข้อความ ความเสียหาย", false, function(value)
     _G.MassDaHeegeen = value
 end)
 spawn(function()
@@ -3792,7 +3792,7 @@ spawn(function()
 	end
 end)
 
-Set:Toggle("ลบเอฟเฟกต์ตอนตาย", true, function(value)
+Set:Toggle("ลบเอฟเฟกต์ตอนตาย", false, function(value)
     _G.Remove_Effect = value
 end)
 spawn(function()
@@ -3843,7 +3843,7 @@ Set:Toggle("บายพาส เทเลพอร์ต", true, function(valu
     BypassTP = value
 end)
 
-Set:Toggle("ความเร็วโจมตี [ แบบไหม่ ]", true, function(value)
+Set:Toggle("ความเร็วโจมตี [ แบบไหม่ และ ไม่โดนเตะ  ]", false, function(value)
     _G.FastAttack = value
 end)
 
@@ -3880,11 +3880,11 @@ spawn(function()
     end)
 end)
 
-Set:Toggle("ความเร็วโจมตี [ แบบไหม่ ]", true, function(value)
+Set:Toggle("ความเร็วโจมตี [ แบบไหม่ มีโอกาสโดนเตะ ]", true, function(value)
     FastAttackSpeed = value
 end)
 
-_G.Fast_Delay = 0.02
+_G.Fast_Delay = 0.15
 
 local CurveFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
 local VirtualUser = game:GetService("VirtualUser")
